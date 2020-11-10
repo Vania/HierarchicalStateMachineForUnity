@@ -18,9 +18,10 @@ example:
 State A = [o, p, q, x]    //state A consists of behaviours o,p,q,x
 State B = [o,x,y,z]	      //state B consists of behaviours o,x,y,z
 
-If we transition from A to B we will call the following methods in this exact order:
-	q.Exit()
-	p.Exit()
-	y.Enter()
-	z.Enter()
+If we transition from A to B we will call the following methods in this exact order:\
+   q.Exit()  
+   p.Exit()  
+   y.Enter()  
+   z.Enter()  
+	
 and then as long as the machine stays in state B, the behaviours o,x,y,z will get Update() called every frame.
